@@ -1,5 +1,6 @@
 
-![Thesis](https://github.com/user-attachments/assets/7bf4b8aa-a0e9-42e0-a522-a787f4391c4b)
+![Thesis](https://github.com/user-attachments/assets/24d18849-77db-40c6-a74c-61ed8e896525)
+
 
 # LLM-Performance-Evaluation-for-Price-Prediction-in-Crypto-Stocks
 This project aims to compare the performance of various open-source Large Language Models (LLMs) in predicting the price movements of cryptocurrencies and stocks. The goal is to assess how well these models handle price prediction tasks in financial markets with different levels of volatility, such as cryptocurrencies and traditional stocks.
