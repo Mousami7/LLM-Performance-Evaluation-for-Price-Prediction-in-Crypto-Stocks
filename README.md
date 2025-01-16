@@ -3,12 +3,15 @@
 
 
 # LLM-Performance-Evaluation-for-Price-Prediction-in-Crypto-Stocks
-This project aims to compare the performance of various open-source Large Language Models (LLMs) in predicting the price movements of cryptocurrencies and stocks. The goal is to assess how well these models handle price prediction tasks in financial markets with different levels of volatility, such as cryptocurrencies and traditional stocks.
+This repository contains the code and resources for the master's thesis "The Comparison of The Performance of Open-Source LLMs In the Prediction of Price Movements of Cryptocurrencies and Stocks"  This project aims to compare the performance of various open-source Large Language Models (LLMs) in predicting the price movements of highly volatile cryptocurrencies and relatively stable stocks.
 # Project Overview
-The project explores the use of open-source LLMs (like GPT-based models) to predict price movements and evaluates their performance against the backdrop of highly volatile cryptocurrencies and relatively stable stock markets.
+The project investigates the potential of open-source LLMs (e.g., GPT-2, FinBERT, and LLaMA) in predicting price movements, focusing on their adaptability to sentiment-driven and volatility-sensitive markets like cryptocurrencies and stocks.
 
-## Objective: To determine which open-source LLM provides the best performance in predicting cryptocurrency and stock prices.
-## Scope: Fine-tuning and testing of different LLMs for both cryptocurrency and stock price forecasting, followed by a comparative analysis of their performances.
+## Objective: Determine which open-source LLM provides the best performance for price prediction in cryptocurrencies and stocks.
+## Scope: 
+-Fine-tuning LLMs for financial time-series forecasting.
+-Evaluating hybrid approaches, such as combining LSTM with FinBERT and GPT-2.
+-Comparative analysis of the models' performance using metrics like MSE, RMSE, and Directional Accuracy (DA).
 # Features
 ## Data Sources:
 
@@ -16,15 +19,20 @@ The project explores the use of open-source LLMs (like GPT-based models) to pred
 ### Stock Data: Collected using yfinance for stocks like Apple (AAPL) and Tesla (TSLA).
 ## LLMs Used:
 
-GPT-2 and other open-source models from the Hugging Face transformers library.
+- GPT-2, FinBERT, and other transformer-based models (e.g., LLaMA) from the Hugging Face library.
+- LSTM as a baseline model and integrated with hybrid approaches (e.g., LSTM + FinBERT).
+  
 ## Data Preprocessing:
 
 - Data normalization and scaling for both cryptocurrencies and stocks.
 - Feature engineering, including moving averages and volatility calculations.
+  
 ## Modeling:
 
 - Fine-tuning various LLMs for time series prediction by converting OHLCV (Open, High, Low, Close, Volume) data into sequences suitable for LLMs.
+- Combined sentiment data (via FinBERT) with historical price data to enhance predictions.
 - Evaluating performance across different time periods and assets.
+  
 ## Evaluation:
 
 - Comparative analysis of the LLMs’ performances on stocks and cryptocurrencies.
@@ -48,6 +56,17 @@ GPT-2 and other open-source models from the Hugging Face transformers library.
 - ccxt (for cryptocurrency data)
 - yfinance (for stock data)
 - pandas, numpy, and scikit-learn (for preprocessing)
+
+# Results
+The models were evaluated on both cryptocurrency and stock datasets. Key findings include:
+
+- Hybrid models (e.g., LSTM + FinBERT) demonstrated superior performance, particularly in cryptocurrency markets where sentiment plays a critical role.
+- LLaMA achieved competitive accuracy in both volatile and stable markets due to its advanced transformer architecture.
+
+# Acknowledgments
+I would like to express my sincere gratitude to Prof. Dr. Visieu Lac and Prof. Schneider for their invaluable guidance, support, and feedback throughout this research. This work would not have been possible without their insights and encouragement.
+
+
 
 
 
