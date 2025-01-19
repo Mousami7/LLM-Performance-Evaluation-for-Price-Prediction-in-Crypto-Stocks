@@ -64,7 +64,7 @@ The models were evaluated on both cryptocurrency and stock datasets. Key finding
 - LLaMA achieved competitive accuracy in both volatile and stable markets due to its advanced transformer architecture.
 
 # Acknowledgments
-I would like to express my sincere gratitude to Prof. Dr. Visieu Lac and Prof. Schneider for their invaluable guidance, support, and feedback throughout this research. This work would not have been possible without their insights and encouragement.
+I would like to express my sincere gratitude to Prof. Dr. Visieu Lac and Prof. Florian Schneider for their invaluable guidance, support, and feedback throughout this research. This work would not have been possible without their insights and encouragement.
 
 
 
